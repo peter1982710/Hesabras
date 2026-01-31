@@ -127,3 +127,6 @@ https://your-domain.com/your-folder/instal/index.html
 یک ابزار حرفه‌ای برای مدیریت فروش و کاربران بدون نیاز به پنل‌های پیچیده.
 
 📩 ارتباط: **@king_service2**
+
+
+<img width="1920" height="906" alt="Screenshot 2026-01-31 051517" src="https://github.com/user-attachments/assets/9245dd12-8139-427a-b54a-a08876548e26" />
