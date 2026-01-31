@@ -143,15 +143,24 @@
                 { id: 'settings', label: 'تنظیمات', icon: Settings },
             ];
 
+            // Obfuscated string: "نوشته شده توسط زمان"
+            const _dev = String.fromCharCode(...[1606,1608,1588,1578,1607,32,1588,1583,1607,32,1578,1608,1587,1591,32,1586,1605,1575,1606]);
+
             return (
                 <div className="w-64 bg-slate-800 text-white min-h-screen flex flex-col shadow-xl hidden md:flex sticky top-0 h-screen">
-                    <div className="p-6 border-b border-slate-700 flex items-center gap-3">
-                        <div className="bg-indigo-500 p-2 rounded-lg">
-                            <Store size={24} />
+                    <div className="p-6 border-b border-slate-700">
+                        <div className="flex items-center gap-3">
+                            <div className="bg-indigo-500 p-2 rounded-lg shrink-0">
+                                <Store size={24} />
+                            </div>
+                            <div>
+                                <h2 className="font-bold text-lg leading-tight">پنل مدیریت</h2>
+                                <span className="text-[11px] text-slate-400 block mt-1">نسخه ۱.۰.۱</span>
+                            </div>
                         </div>
-                        <h2 className="font-bold text-lg">پنل مدیریت</h2>
                     </div>
-                    <nav className="flex-1 p-4 space-y-2">
+                    
+                    <nav className="flex-1 p-4 space-y-2 overflow-y-auto">
                         {menuItems.map((item) => {
                             const Icon = item.icon;
                             const isActive = currentPage === item.id;
@@ -169,6 +178,14 @@
                             );
                         })}
                     </nav>
+
+                    <div className="p-4 bg-slate-900/50 border-t border-slate-700 text-center">
+                        <p className="text-[11px] text-slate-500 font-medium mb-3 select-none">{_dev}</p>
+                        <div className="bg-slate-800/80 rounded-lg p-2 border border-slate-700">
+                             <span className="text-[10px] text-slate-400 block mb-1">جهت پشتیبانی</span>
+                             <a href="https://t.me/king_service2" target="_blank" className="text-xs font-mono text-indigo-400 hover:text-indigo-300 transition-colors block" dir="ltr">@king_service2</a>
+                        </div>
+                    </div>
                 </div>
             );
         };
