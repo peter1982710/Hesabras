@@ -1,5 +1,5 @@
  
-#<img width="1920" height="906" alt="Screenshot 2026-01-31 051517" src="https://github.com/user-attachments/assets/3c63bd6d-e0fc-423e-8980-acae81ff9d5e" />
+
 
 
 🚀 سیستم حساب‌رسی حرفه‌ای PHP + ربات تلگرام (کاملاً یکپارچه)
